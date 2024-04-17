@@ -7,7 +7,9 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./todolist.component.css']
 })
 export class TodolistComponent implements OnInit {
-  taskArray = [{ taskName: 'Brush teeth', isCompleted: false, isEditable: false }];
+  taskArray = [
+    { taskName: 'do work', isCompleted: false, isEditable: false, date: '', description: 'math assignment'}
+  ];
 
   constructor() { }
 
@@ -20,8 +22,10 @@ export class TodolistComponent implements OnInit {
     this.taskArray.push({
       taskName: form.controls['task'].value,
       isCompleted: false,
-      isEditable: false
-    })
+      isEditable: false,
+      date: form.controls['date'].value,
+      description: form.controls['description'].value
+    });
 
     form.reset();
   }
@@ -46,7 +50,4 @@ export class TodolistComponent implements OnInit {
     this.taskArray[index].taskName = newtask;
     this.taskArray[index].isEditable = false;
   }
-
-
-
 }

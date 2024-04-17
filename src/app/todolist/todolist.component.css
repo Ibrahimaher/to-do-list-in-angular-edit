@@ -1,11 +1,13 @@
 h1 {
     text-align: center;
     font-size: 2rem;
-    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    color: brown;
 }
 
 #submitButton {
-    margin-top: 20px;
+    margin-top: 25pt;
 }
 
 #myCheckbox {
@@ -13,7 +15,7 @@ h1 {
 }
 
 #submitForm {
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 #taskInTable {
@@ -21,11 +23,11 @@ h1 {
 }
 
 #delete {
-    width: 60px;
+    width: 70px;
 }
 
 #edit {
-    width: 60px;
+    width: 70px;
 }
 
 #save {
@@ -33,7 +35,7 @@ h1 {
 }
 
 .edit {
-    border: solid 2px orange;
+    border: solid 2px rgb(0, 255, 13);
 }
 
 .not-edit {
